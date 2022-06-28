@@ -22,6 +22,8 @@ header{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a2f96;
     color: #a0fefb;
+    left: 0;
+    right: 0;
 }
 
 header h1 {
@@ -175,9 +177,14 @@ div a:hover{
 }
 
 
-.work-pieces a:hover{
+.work-pieces a::before:hover{
     opacity: 1;
+    
 
+}
+
+.work-pieces a p:hover{
+    mix-blend-mode: multiply;
 }
 
 .img p{
@@ -186,6 +193,13 @@ div a:hover{
     bottom: 10px;
     padding: 4px;
     background-color: aquamarine;
+    z-index: 2;
+    color: blueviolet;
+}
+
+.img header{
+    z-index: 3;
+    position:absolute;
 }
 
 .img{
@@ -203,64 +217,148 @@ div a:hover{
     
 }
 
+.first-project::before{
+    content: "";
+    background: url('./Assets/front\ view\ new_FINAL.jpg') no-repeat top center;
+    background-size: cover;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .6;
+    z-index: 1;
+    
+}
+
+.first-project:hover::before{
+    opacity: 1;
+}
+
 .first-project{
-    background-image: url('./Assets/front\ view\ new_FINAL.jpg');
-    background-size: 100%;
     flex-basis: 100%;
     height: 400px;
-    opacity: .6;
     width: 100%;
     object-fit: cover;
+    position: relative;
     background-color: rgb(0, 0, 0);
-
+    z-index: 0;
 }
 
+.second-project::before{
+    content: "";
+    background: url('./Assets/front\ view\ new_FINAL.jpg') no-repeat top center;
+    background-size: cover;
 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .6;
+    z-index: 1;
+    
+}
+
+.second-project:hover::before{
+    opacity: 1;
+}
 .second-project{
-    background-image: url('./Assets/front\ view\ new_FINAL.jpg');
-    background-size: 100%;
     flex-basis: 49%;
     height: 400px;
-    opacity: .6;
     width: 100%;
     object-fit: cover;
+    position: relative;
     background-color: rgb(0, 0, 0);
+    z-index: 0;
 
 }
 
+.third-project::before{
+    content: "";
+    background: url('./Assets/front\ view\ new_FINAL.jpg') no-repeat top center;
+    background-size: cover;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .6;
+    z-index: 1;
+    
+}
+
+.third-project:hover::before{
+    opacity: 1;
+}
 .third-project{
-    background-image: url('./Assets/front\ view\ new_FINAL.jpg');
-    background-size: 100%;
     flex-basis: 49%;
     height: 400px;
-    opacity: .6;
     width: 100%;
     object-fit: cover;
+    position: relative;
     background-color: rgb(0, 0, 0);
+    z-index: 0;
 
 }
 
+.fourth-project::before{
+    content: "";
+    background: url('./Assets/front\ view\ new_FINAL.jpg') no-repeat top center;
+    background-size: cover;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .6;
+    z-index: 1;
+    
+}
+
+.fourth-project:hover::before{
+    opacity: 1;
+}
 .fourth-project{
-    background-image: url('./Assets/front\ view\ new_FINAL.jpg');
-    background-size: 100%;
     flex-basis: 49%;
     height: 400px;
-    opacity: .6;
     width: 100%;
     object-fit: cover;
+    position: relative;
     background-color: rgb(0, 0, 0);
+    z-index: 0;
 
 }
 
+.fifth-project::before{
+    content: "";
+    background: url('./Assets/front\ view\ new_FINAL.jpg') no-repeat top center;
+    background-size: cover;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .6;
+    z-index: 1;
+    
+}
+
+.fifth-project:hover::before{
+    opacity: 1;
+}
 .fifth-project{
-    background-image: url('./Assets/front\ view\ new_FINAL.jpg');
-    background-size: 100%;
     flex-basis: 49%;
     height: 400px;
-    opacity: .6;
     width: 100%;
     object-fit: cover;
+    position: relative;
     background-color: rgb(0, 0, 0);
+    z-index: 0;
 
 }
 
